@@ -137,3 +137,30 @@
             align-items: center;
             gap: 0.5rem;
         }
+
+
+        .cta-button:hover {
+            background: linear-gradient(to right, #d97706, #b45309);
+            box-shadow: 0 10px 35px rgba(251, 191, 36, 0.4);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: #9ca3af;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+
+        .mobile-menu {
+            display: none;
+            background: rgba(0, 0, 0, 0.95);
+            backdrop-filter: blur(20px);
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 1.5rem;
+        }
+
+        .mobile-menu.open {
+            display: block;
+        }
