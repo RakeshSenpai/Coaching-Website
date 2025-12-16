@@ -186,3 +186,25 @@
             color: #fbbf24;
             border: 1px solid rgba(251, 191, 36, 0.2);
         }
+
+      /* Hero Section */
+        .hero-section {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            padding-top: 80px;
+        }
+
+        .hero-bg {
+            position: absolute;
+            inset: 0;
+        }
+
+        .hero-gradient {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(217, 119, 6, 0.05), transparent, rgba(251, 191, 36, 0.05));
+        }
