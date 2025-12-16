@@ -6,6 +6,64 @@
     <title>Document</title>
 </head>
 <body>
-    
+        <!-- Navbar -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <!-- Logo -->
+            <div class="logo" onclick="scrollToSection('home')">
+                <div class="logo-icon">
+                    <div class="logo-icon-main">
+                        <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 14l9-5-9-5-9 5 9 5z M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"></path>
+                        </svg>
+                    </div>
+                    <div class="logo-icon-pulse"></div>
+                </div>
+                <div class="logo-text">
+                    <h1>North-East Vision Academy</h1>
+                    <p>Excellence in Education</p>
+                </div>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <div class="nav-links">
+                <button class="nav-link active" data-section="home" onclick="scrollToSection('home')">Home</button>
+                <button class="nav-link" data-section="about" onclick="scrollToSection('about')">About</button>
+                <button class="nav-link" data-section="courses" onclick="scrollToSection('courses')">Courses</button>
+                <button class="nav-link" data-section="faculty" onclick="scrollToSection('faculty')">Faculty</button>
+                <button class="nav-link" data-section="contact" onclick="scrollToSection('contact')">Contact</button>
+            </div>
+
+            <!-- CTA Button -->
+            <button class="cta-button" onclick="scrollToSection('contact')">
+                Enroll Now
+                <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                </svg>
+            </button>
+
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <svg id="menu-icon" class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <button class="mobile-link active" data-section="home" onclick="scrollToSection('home')">Home</button>
+            <button class="mobile-link" data-section="about" onclick="scrollToSection('about')">About</button>
+            <button class="mobile-link" data-section="courses" onclick="scrollToSection('courses')">Courses</button>
+            <button class="mobile-link" data-section="faculty" onclick="scrollToSection('faculty')">Faculty</button>
+            <button class="mobile-link" data-section="contact" onclick="scrollToSection('contact')">Contact</button>
+            <button class="cta-button" style="width: 100%; display: flex; justify-content: center;" onclick="scrollToSection('contact')">
+                Enroll Now
+                <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                </svg>
+            </button>
+        </div>
+    </nav>
 </body>
 </html>
