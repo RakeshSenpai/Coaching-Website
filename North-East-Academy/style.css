@@ -595,3 +595,60 @@
             font-size: 0.875rem;
             color: #9ca3af;
         }
+
+
+
+        .course-meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
+
+        .course-meta-dot {
+            width: 6px;
+            height: 6px;
+            background: #fbbf24;
+            border-radius: 50%;
+        }
+
+        /* Faculty Card */
+        .faculty-card {
+            position: relative;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 1rem;
+            overflow: hidden;
+            transition: all 0.5s ease;
+        }
+
+        .faculty-card:hover {
+            border-color: rgba(251, 191, 36, 0.3);
+            box-shadow: 0 20px 40px rgba(251, 191, 36, 0.1);
+            transform: translateY(-8px);
+        }
+
+        .faculty-image {
+            position: relative;
+            height: 16rem;
+            overflow: hidden;
+        }
+
+        .faculty-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.7s ease;
+        }
+
+        .faculty-card:hover .faculty-image img {
+            transform: scale(1.1);
+        }
+
+        .faculty-image::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, black, rgba(0, 0, 0, 0.5), transparent);
+            opacity: 0.6;
+        }
