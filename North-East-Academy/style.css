@@ -700,3 +700,54 @@
             border-radius: 0.5rem;
             width: fit-content;
         }
+
+
+    /* Contact Section */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 3rem;
+        }
+
+        .contact-info-card {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 1rem;
+            padding: 2rem;
+        }
+
+        .contact-info-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-info-item {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-info-icon {
+            width: 3rem;
+            height: 3rem;
+            background: rgba(251, 191, 36, 0.1);
+            border: 1px solid rgba(251, 191, 36, 0.2);
+            border-radius: 0.75rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .contact-info-text-title {
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+
+        .contact-info-text-content {
+            font-size: 0.875rem;
+            color: #9ca3af;
+            line-height: 1.6;
+        }
