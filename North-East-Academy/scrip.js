@@ -107,3 +107,85 @@
                 </div>
             `;
 
+            // Reset form after 3 seconds
+            setTimeout(() => {
+                formContainer.innerHTML = `
+                    <form id="contactForm" onsubmit="handleFormSubmit(event)">
+                        <div class="form-group">
+                            <label class="form-label">Full Name</label>
+                            <input type="text" class="form-input" placeholder="John Doe" required>
+                        </div>
+
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label class="form-label">Email</label>
+                                <input type="email" class="form-input" placeholder="john@example.com" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">Phone</label>
+                                <input type="tel" class="form-input" placeholder="+91 98765 43210" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Course Interested In</label>
+                            <select class="form-select" required>
+                                <option value="">Select a course</option>
+                                <option value="jee">JEE Advanced</option>
+                                <option value="neet">NEET Preparation</option>
+                                <option value="foundation">Foundation Course</option>
+                                <option value="crash">Crash Course</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Message</label>
+                            <textarea class="form-textarea" placeholder="Tell us about your goals and how we can help..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="primary-button" style="width: 100%; height: 3rem; border-radius: 0.75rem;">
+                            Submit Enquiry
+                            <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                            </svg>
+                        </button>
+                    </form>
+                `;
+            }, 3000);
+        }
+
+        // Add fade-in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all cards and sections
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.card, .course-card, .faculty-card').forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(30px)';
+                el.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+                observer.observe(el);
+            });
+
+            // Show hero right on desktop
+            if (window.innerWidth >= 1024) {
+                const heroRight = document.querySelector('.hero-right');
+                if (heroRight) {
+                    heroRight.style.display = 'block';
+                    heroRight.style.opacity = '0';
+                    heroRight.style.animation = 'fadeInUp 0.8s forwards 0.5s';
+                }
+            }
+        });
