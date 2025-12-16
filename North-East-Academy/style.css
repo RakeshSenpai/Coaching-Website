@@ -652,3 +652,51 @@
             background: linear-gradient(to top, black, rgba(0, 0, 0, 0.5), transparent);
             opacity: 0.6;
         }
+
+
+      .experience-badge {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: rgba(251, 191, 36, 0.9);
+            backdrop-filter: blur(10px);
+            color: black;
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 0.375rem 0.75rem;
+            border-radius: 9999px;
+            z-index: 10;
+        }
+
+        .faculty-content {
+            padding: 1.5rem;
+        }
+
+        .faculty-name {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .faculty-card:hover .faculty-name {
+            color: #fbbf24;
+        }
+
+        .faculty-position {
+            font-size: 0.875rem;
+            color: #9ca3af;
+            margin-bottom: 0.75rem;
+        }
+
+        .faculty-specialization {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.75rem;
+            color: #fbbf24;
+            background: rgba(251, 191, 36, 0.1);
+            padding: 0.375rem 0.75rem;
+            border-radius: 0.5rem;
+            width: fit-content;
+        }
