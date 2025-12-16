@@ -208,3 +208,28 @@
             inset: 0;
             background: linear-gradient(135deg, rgba(217, 119, 6, 0.05), transparent, rgba(251, 191, 36, 0.05));
         }
+
+
+        .hero-blur-1 {
+            position: absolute;
+            top: 80px;
+            left: 40px;
+            width: 288px;
+            height: 288px;
+            background: rgba(251, 191, 36, 0.1);
+            border-radius: 50%;
+            filter: blur(80px);
+            animation: pulse 3s infinite;
+        }
+
+        .hero-blur-2 {
+            position: absolute;
+            bottom: 80px;
+            right: 40px;
+            width: 384px;
+            height: 384px;
+            background: rgba(217, 119, 6, 0.1);
+            border-radius: 50%;
+            filter: blur(80px);
+            animation: pulse 3s infinite 1s;
+        }
