@@ -295,3 +295,38 @@
             gap: 1rem;
             margin-bottom: 3rem;
         }
+
+
+        .primary-button {
+            background: linear-gradient(to right, #f59e0b, #d97706);
+            color: black;
+            font-weight: 600;
+            padding: 1rem 2rem;
+            border-radius: 9999px;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 20px 35px rgba(251, 191, 36, 0.3);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1rem;
+        }
+
+        .primary-button:hover {
+            background: linear-gradient(to right, #d97706, #b45309);
+            box-shadow: 0 20px 45px rgba(251, 191, 36, 0.5);
+            transform: scale(1.05);
+        }
+
+        .secondary-button {
+            background: transparent;
+            color: white;
+            font-weight: 600;
+            padding: 1rem 2rem;
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            border-radius: 9999px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 1rem;
+        }
