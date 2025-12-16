@@ -443,3 +443,33 @@
             0%, 100% { transform: translateY(0); }
             50% { transform: translateY(-10px); }
         }
+
+     /* Section Styles */
+        section {
+            position: relative;
+            padding: 2rem 0;
+        }
+
+        .section-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: rgba(251, 191, 36, 0.1);
+            border: 1px solid rgba(251, 191, 36, 0.2);
+            border-radius: 9999px;
+            margin-bottom: 1.5rem;
+        }
+
+        .section-badge span {
+            font-size: 0.875rem;
+            color: #fbbf24;
+            font-weight: 500;
+        }
+
+        .section-title {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
