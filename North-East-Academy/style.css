@@ -77,6 +77,10 @@
             50% { opacity: 0.5; transform: scale(1.2); }
         }
 
+        .logo-text{
+            height: 30px;
+        }
+
         .logo-text h1 {
             font-size: 1.25rem;
             font-weight: 700;
